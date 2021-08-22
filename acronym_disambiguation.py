@@ -101,7 +101,7 @@ def test(model, data_loader, vocab, loss_function, encoder, device):
 
             print("acronym: " + samples[0].split(" ")[0])
             print("predicted expansion: " + encoder.inverse_transform(predictions))
-            print("true expansion:      "  \ 
+            print("true expansion:      "
                     + encoder.inverse_transform(expansions).tostring() + "\n")
 
     return
